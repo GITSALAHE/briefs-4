@@ -1,0 +1,167 @@
+body {
+    margin:0px;
+    padding: 0px;
+}
+header{
+    background-color: #c62865;
+    height: 211px;
+}
+header img{
+    position: relative;
+    left: 814px;
+    top: 81px;
+    width: 14%;
+    border-radius: 50%;
+}
+.mySlides img{
+    width: 40%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 600px;
+    color: black;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    bottom: 39px;
+    left: 174px;
+}
+  
+  
+  .active, .dot:hover {
+    background-color: #a8025e;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+  #all li img{
+    width: 340px;
+    height: 340px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#all{
+list-style-type: none;
+  position: relative;
+  left: 390px;
+  top: 242px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 57%;
+}
+
+
+#all li img:hover{
+  -webkit-box-shadow: -1px 0px 21px -8px rgba(0,0,0,1);
+  -moz-box-shadow: -1px 0px 21px -8px rgba(0,0,0,1);
+  box-shadow: -1px 0px 21px -8px rgba(0,0,0,1);
+}
+.navbar{
+    list-style-type: none;
+    float: right;
+    display: flex;
+    margin-right: 27px;
+    display: flex;
+    font-size: 34px;
+    font-family: Quesha;
+    font-weight: bolder;
+}
+.navbar li {
+    margin-right: 40px;
+    cursor: pointer;
+}
+.navbar li:hover{
+    background-image: url(../img/Scribble.png);
+    background-size: 100% 39px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    color: red;
+    color: black;
+}
