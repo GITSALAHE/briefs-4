@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,98 +15,62 @@
            <li>About Us</li>
        </ul>
     </header>
+    
     <div class="inp-photo">
-        <span>picture of your <br> podcasts</span>
-        <input type="text" id="adding" placeholder="please put the URL">
-        <br>
-        <br>
-        <span>put the name of <br> podcast</span>
-        <input type="text" placeholder="please put the podcast" id="pd-name">
-        <br>
-        <br>
-        <span>put the name of <br> podcaster</span>
-        <input type="text" placeholder="please put the podcaster" id="pd-pds">
-        <br>
-        <br>
-        <span>put the Description <br> of podcast</span>
-        <input type="text" placeholder="please put the Description" id="pd-des">
-        <button onclick="add()" id="my-sub">submit</button>
+        <input type="text" id="adding">
+        <button onclick="add()">submit</button>
     </div>
     <h1>LISTEN TO OUR PODCASTS</h1>
-    <div>
    <ul id="all">
-       <li id="myli"><img src="img/1.jpg" alt="">
-        <p id="text-img2">PODCAST NAME</p>
-        <p id="text-img1">BING BOSS</p>
-        <p id="text-img2">Name of podcaster</p>
-        <p id="text-img1">CREATIVE ENTREPRENEURS</p>
-        <p id="text-img2">Description</p>
-        <p id="text-img1">BEING BOSS IS A PODCAST FOR CREATIVE ENTREPRENEURS, FREELANCERS, AND SIDE-HUSTLERS. 
-           JOIN EMILY THOMPSON AND KATHLEEN SHANNON AS THEY DIG INTO THE MINDSET, HABITS, ROUTINES, AND BOUNDARIES THAT HELP 
-           YOU MAKE MONEY DOING WHAT YOU LOVE.</p></li>
-       <li><img src="img/2.jpg" alt="">
-        <p id="text-img2">PODCAST NAME</p>
-        <p id="text-img1">BING BOSS</p>
-        <p id="text-img2">Name of podcaster</p>
-        <p id="text-img1">CREATIVE ENTREPRENEURS</p>
-        <p id="text-img2">Description</p>
-        <p id="text-img1">BEING BOSS IS A PODCAST FOR CREATIVE ENTREPRENEURS, FREELANCERS, AND SIDE-HUSTLERS. 
-           JOIN EMILY THOMPSON AND KATHLEEN SHANNON AS THEY DIG INTO THE MINDSET, HABITS, ROUTINES, AND BOUNDARIES THAT HELP 
-           YOU MAKE MONEY DOING WHAT YOU LOVE.</p>
-    </li>
-       <li><img src="img/3.jpg" alt="">
-        <p id="text-img2">PODCAST NAME</p>
-        <p id="text-img1">BING BOSS</p>
-        <p id="text-img2">Name of podcaster</p>
-        <p id="text-img1">CREATIVE ENTREPRENEURS</p>
-        <p id="text-img2">Description</p>
-        <p id="text-img1">BEING BOSS IS A PODCAST FOR CREATIVE ENTREPRENEURS, FREELANCERS, AND SIDE-HUSTLERS. 
-           JOIN EMILY THOMPSON AND KATHLEEN SHANNON AS THEY DIG INTO THE MINDSET, HABITS, ROUTINES, AND BOUNDARIES THAT HELP 
-           YOU MAKE MONEY DOING WHAT YOU LOVE.</p>
-    </li>
+       <li><img src="img/1.jpg" alt=""></li>
+       <li><img src="img/2.jpg" alt=""></li>
+       <li><img src="img/3.jpg" alt=""></li>
    </ul>
-   </div>
-<footer>
-    <div>ALL RIGHT RESEVED BY GITSALAH TEAM LLC</div>
-</footer>
+<script>
+/*    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}*/
+</script>
 <script>
  function add() {
   var all = document.getElementById("all");   
   var z = document.createElement('li');  
-  var x = document.createElement("img");
-  var text1 = document.createElement("p");
-  var text2 = document.createElement('p');
-  var text3 = document.createElement("p");
-  var text4 = document.createElement("p");
-  var text5 = document.createElement("p");
-  var text6 = document.createElement("p"); 
-  var y = document.getElementById("adding").value;
-  var pdname = document.getElementById("pd-name").value;
-  var pdsname = document.getElementById("pd-pds").value;
-  var des = document.getElementById("pd-des").value;
+  var x = document.createElement("IMG"); //balise image 
+  var y = document.getElementById("adding").value; //value de l'input 
   x.setAttribute("src", y);
   z.setAttribute("id", "images");
-  text1.setAttribute("id", "text-img2");
-  text2.setAttribute("id", "text-img1");
-  text3.setAttribute("id", "text-img2");
-  text4.setAttribute("id", "text-img1");
-  text5.setAttribute("id", "text-img2");
-  text6.setAttribute("id", "text-img1");
   all.appendChild(z);
   z.appendChild(x);
-  z.appendChild(text1);
-  z.appendChild(text2);
-  z.appendChild(text3);
-  z.appendChild(text4);
-  z.appendChild(text5);
-  z.appendChild(text6);
-  text1.innerText = "PODCAST NAME";
-  text2.innerText = pdname;
-  text3.innerText = "Name of podcaster";
-  text4.innerText = pdsname;
-  text5.innerText = "Description";
-  text6.innerText = des;
+  clear();
+}
+function clear(){
+    var y = document.getElementById("adding").value;
+    y = "";
 }
 </script>
+
 </body>
 </html>
