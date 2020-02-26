@@ -1,7 +1,8 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-image: url(../img/b1.gif);
+  /*background: linear-gradient(135deg,#c62865,black,black,black,#c62865);*/
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -142,6 +143,7 @@ header img {
   margin-bottom: 20px;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
+
 }
 
 #all {
@@ -155,6 +157,8 @@ header img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 57%;
+
+
 }
 
 #all li img:hover {
@@ -186,7 +190,9 @@ header img {
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.btn{
+  margin-bottom: -40px;
+}
 h1 {
   position: relative;
   left: 724px;
@@ -205,7 +211,7 @@ h1 {
   border-radius: 14px;
   width: 789px;
   height: 371px;
-  padding-top: 1pc;
+  padding-top: 3pc;
   padding-left: 19px;
   color: white;
   font-family: montserrat;
@@ -299,6 +305,9 @@ h1 {
   margin-right: 15px;
   margin-bottom: 11px;
   border-radius: 12px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .inp-photo input {
